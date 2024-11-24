@@ -1,7 +1,7 @@
 {
   "name": "tiksave-api",
   "version": "1.0.0",
-  "main": "api/youtubedown.js",
+  "main": "api/ytdownloader.js",
   "dependencies": {
     "axios": "^0.27.2",
     "cheerio": "^1.0.0-rc.10",

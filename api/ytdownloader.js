@@ -8,7 +8,7 @@ const ddownr = {
         `https://p.oceansaver.in/ajax/download.php?copyright=0&format=${format}&url=${url}`,
         {
           headers: {
-            'User -Agent': 'MyApp/1.0', // Perbaikan di sini
+            'User-Agent': 'MyApp/1.0', // Perbaikan di sini
             Referer: 'https://ddownr.com/enW7/youtube-video-downloader',
           },
         }

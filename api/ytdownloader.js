@@ -8,7 +8,7 @@ const ddownr = {
         `https://p.oceansaver.in/ajax/download.php?copyright=0&format=${format}&url=${url}`,
         {
           headers: {
-            'User -Agent': 'MyApp/1.0', // Perbaiki di sini
+            'User -Agent': 'MyApp/1.0', // Perbaikan di sini
             Referer: 'https://ddownr.com/enW7/youtube-video-downloader',
           },
         }
@@ -35,7 +35,7 @@ const ddownr = {
         `https://p.oceansaver.in/ajax/progress.php?id=${id}`,
         {
           headers: {
-            'User -Agent': 'MyApp/1.0', // Perbaiki di sini
+            'User -Agent': 'MyApp/1.0', // Perbaikan di sini
             Referer: 'https://ddownr.com/enW7/youtube-video-downloader',
           },
         }

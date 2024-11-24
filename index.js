@@ -8,7 +8,7 @@ const ddownr = {
         `https://p.oceansaver.in/ajax/download.php?copyright=0&format=${format}&url=${url}`,
         {
           headers: {
-            'User-Agent': 'MyApp/1.0',
+            'User -Agent': 'MyApp/1.0',
             Referer: 'https://ddownr.com/enW7/youtube-video-downloader',
           },
         }
@@ -35,7 +35,7 @@ const ddownr = {
         `https://p.oceansaver.in/ajax/progress.php?id=${id}`,
         {
           headers: {
-            'User-Agent': 'MyApp/1.0',
+            'User -Agent': 'MyApp/1.0',
             Referer: 'https://ddownr.com/enW7/youtube-video-downloader',
           },
         }
@@ -66,6 +66,11 @@ module.exports = async (req, res) => {
       message: 'Hanya metode GET yang didukung.',
     });
   }
+
+  // Menambahkan header CORS
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Ganti '*' dengan domain spesifik jika diperlukan
+  res.setHeader('Access-Control-Allow-Methods', 'GET');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   const { url, format } = req.query;
 
